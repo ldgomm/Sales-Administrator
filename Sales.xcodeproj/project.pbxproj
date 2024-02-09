@@ -37,7 +37,6 @@
 		AC3C7E172B8E3AE600D71284 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7DE72B8E3AE600D71284 /* Camera.swift */; };
 		AC3C7E182B8E3AE600D71284 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7DE82B8E3AE600D71284 /* Specifications.swift */; };
 		AC3C7E192B8E3AE600D71284 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7DE92B8E3AE600D71284 /* Price.swift */; };
-		AC3C7E1A2B8E3AE600D71284 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7DEA2B8E3AE600D71284 /* Interval.swift */; };
 		AC3C7E1B2B8E3AE600D71284 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7DEB2B8E3AE600D71284 /* Photo.swift */; };
 		AC3C7E1C2B8E3AE600D71284 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7DEC2B8E3AE600D71284 /* Size.swift */; };
 		AC3C7E1D2B8E3AE600D71284 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7DED2B8E3AE600D71284 /* Code.swift */; };
@@ -109,7 +108,6 @@
 		AC3C7DE72B8E3AE600D71284 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		AC3C7DE82B8E3AE600D71284 /* Specifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specifications.swift; sourceTree = "<group>"; };
 		AC3C7DE92B8E3AE600D71284 /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
-		AC3C7DEA2B8E3AE600D71284 /* Interval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
 		AC3C7DEB2B8E3AE600D71284 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		AC3C7DEC2B8E3AE600D71284 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		AC3C7DED2B8E3AE600D71284 /* Code.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
@@ -259,7 +257,6 @@
 				AC3C7DD62B8E3AE600D71284 /* metal */,
 				AC3C7DE82B8E3AE600D71284 /* Specifications.swift */,
 				AC3C7DE92B8E3AE600D71284 /* Price.swift */,
-				AC3C7DEA2B8E3AE600D71284 /* Interval.swift */,
 				AC3C7DEB2B8E3AE600D71284 /* Photo.swift */,
 				AC3C7DEC2B8E3AE600D71284 /* Size.swift */,
 				AC3C7DED2B8E3AE600D71284 /* Code.swift */,
@@ -519,7 +516,6 @@
 				AC3C7E1F2B8E3AE600D71284 /* Medicine.swift in Sources */,
 				AC3C7E192B8E3AE600D71284 /* Price.swift in Sources */,
 				AC3C7E232B8E3AE600D71284 /* Food.swift in Sources */,
-				AC3C7E1A2B8E3AE600D71284 /* Interval.swift in Sources */,
 				AC3C7E292B8E3AE600D71284 /* Information.swift in Sources */,
 				AC3C7E182B8E3AE600D71284 /* Specifications.swift in Sources */,
 				AC3C7E072B8E3AE600D71284 /* SmartFeatures.swift in Sources */,
