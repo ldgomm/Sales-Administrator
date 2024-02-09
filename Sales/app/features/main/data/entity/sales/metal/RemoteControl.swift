@@ -7,23 +7,12 @@
 
 import Foundation
 
-class RemoteControl: Codable, Hashable {
-    
-    static func == (lhs: RemoteControl, rhs: RemoteControl) -> Bool {
-        return lhs.type == rhs.type && lhs.voiceControl == rhs.voiceControl
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(type)
-        hasher.combine(voiceControl)
-    }
-    
+class RemoteControl: Codable {
     var type: [String]
     var voiceControl: Bool? = nil
-
+    
     private enum CodingKeys: CodingKey {
-        case type
-        case voiceControl
+        case type, voiceControl
     }
     
     init(type: [String], voiceControl: Bool? = nil) {

@@ -7,35 +7,28 @@
 
 import Foundation
 
-class Offer {
-    var isActive: Bool = false
+struct Offer: Codable {
+    var isActive: Bool
     var discountPercentage: Int? = nil
-    var time: OfferTime? = nil
     
-    init(isActive: Bool, discountPercentage: Int? = nil, time: OfferTime? = nil) {
-        self.isActive = isActive
-        self.discountPercentage = discountPercentage
-        self.time = time
-    }
+//    private enum CodingKeys: CodingKey {
+//        case isActive, discountPercentage
+//    }
+//    
+//    init(isActive: Bool, discountPercentage: Int? = nil) {
+//        self.isActive = isActive
+//        self.discountPercentage = discountPercentage
+//    }
+//
+//    required init(from decoder: Decoder) throws {
+//        let container = try decoder.container(keyedBy: CodingKeys.self)
+//        isActive = try container.decode(Bool.self, forKey: .isActive)
+//        discountPercentage = try container.decodeIfPresent(Int.self, forKey: .discountPercentage)
+//    }
+//    
+//    func encode(to encoder: Encoder) throws {
+//        var container = encoder.container(keyedBy: CodingKeys.self)
+//        try container.encode(isActive, forKey: .isActive)
+//        try container.encodeIfPresent(discountPercentage, forKey: .discountPercentage)
+//    }
 }
-
-class OfferTime {
-    var timeInterval: Interval? = nil
-    var day: Int? = nil
-    
-    init(timeInterval: Interval? = nil, day: Int? = nil) {
-        self.timeInterval = timeInterval
-        self.day = day
-    }
-}
-
-class Interval {
-    var startTime: Int64 = 0
-    var endTime: Int64 = 0
-    
-    init(startTime: Int64, endTime: Int64) {
-        self.startTime = startTime
-        self.endTime = endTime
-    }
-}
-

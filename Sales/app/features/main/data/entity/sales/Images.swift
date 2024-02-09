@@ -7,21 +7,28 @@
 
 import Foundation
 
-class Images {
-    var product: Photo
-    var box: Photo? = nil
+class Images: Codable {
+    var product: [Photo]
+    var box: [Photo]? = nil
     
-    init(product: Photo, box: Photo? = nil) {
+    private enum CodingKeys: CodingKey {
+        case product, box
+    }
+    
+    init(product: [Photo], box: [Photo]? = nil) {
         self.product = product
         self.box = box
     }
-}
 
-class Photo {
-    var url: String? = nil
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        product = try container.decode([Photo].self, forKey: .product)
+        box = try container.decodeIfPresent([Photo].self, forKey: .box)
+    }
     
-    init(url: String? = nil) {
-        self.url = url
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(product, forKey: .product)
+        try container.encodeIfPresent(box, forKey: .box)
     }
 }
-

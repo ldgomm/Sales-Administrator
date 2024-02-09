@@ -7,14 +7,8 @@
 
 import Foundation
 
-class Category {
+struct Category: Codable {
     var mi: String
     var ni: String
     var xi: String
-    
-    init(mi: String, ni: String, xi: String) {
-        self.mi = mi
-        self.ni = ni
-        self.xi = xi
-    }
 }

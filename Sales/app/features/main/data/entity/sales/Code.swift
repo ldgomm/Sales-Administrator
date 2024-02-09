@@ -7,13 +7,8 @@
 
 import Foundation
 
-class Codes {
-    var store: String? = nil
+struct Codes: Codable {
     var bar: String? = nil
     var qr: String? = nil
-    init(store: String? = nil, bar: String? = nil, qr: String? = nil) {
-        self.store = store
-        self.bar = bar
-        self.qr = qr
-    }
+    var store: String? = nil
 }

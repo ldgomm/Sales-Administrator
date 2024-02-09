@@ -1,31 +1,30 @@
 //
-//  Drink.swift
+//  Photo.swift
 //  Hermes
 //
-//  Created by José Ruiz on 30/1/24.
+//  Created by José Ruiz on 8/2/24.
 //
 
 import Foundation
 
-class Drink: Codable {
-    var degrees: Int
+class Photo: Codable {
+    var url: String
     
     private enum CodingKeys: CodingKey {
-        case degrees
+        case url
     }
     
-    init(degrees: Int) {
-        self.degrees = degrees
+    init(url: String) {
+        self.url = url
     }
 
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        degrees = try container.decode(Int.self, forKey: .degrees)
+        url = try container.decode(String.self, forKey: .url)
     }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(degrees, forKey: .degrees)
+        try container.encode(url, forKey: .url)
     }
 }
-
